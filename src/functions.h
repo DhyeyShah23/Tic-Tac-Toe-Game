@@ -1,9 +1,14 @@
 // To welcome players
 void greetings();
 
-// Bool Function to check if the player entered that number or not.
-bool modifyElement(int);         
+// Bool Function to check if the player entered a valid number or not.
+bool verifyChoice(int choice, int* grid);
 
-void displayGrid(int arr[3][3]);
+// To choose weather to place 'X' OR 'O'.
+char selectElement(int a);
 
-int displayElement(int);
+// To display the grid after each move.
+void displayGrid(int* grid, int a);
+
+// To check if we have a winner or not
+int isGameOver(int* grid);
